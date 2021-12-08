@@ -36,9 +36,6 @@ public class PlayerModel : IUpdatable
         Vector2 currentPosition = _rigidbody.position;
         _newPosition = currentPosition + _offset * direction;
         _moveDirection = _newPosition - currentPosition;
-        //_rigidbody.AddForce(moveDirection, ForceMode2D.Impulse);
-        
-
     }
 
     public void SetMovingAbillity(float movingTime)
