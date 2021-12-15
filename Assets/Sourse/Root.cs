@@ -10,7 +10,7 @@ public class Root : MonoBehaviour
     private void Awake()
     {
         _playerModel = new PlayerModel();
-        _router = new InputRouter();
+        _router = new InputRouter(_playerModel);
         
         _presenter.Init(_playerModel);
         _presenter.Init(_router);
@@ -26,5 +26,10 @@ public class Root : MonoBehaviour
     {
         _router.OnDisable();
         _presenter.Disable();
+    }
+
+    private void Update()
+    {
+        _router.Update();
     }
 }

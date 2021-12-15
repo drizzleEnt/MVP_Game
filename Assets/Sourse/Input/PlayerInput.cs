@@ -32,7 +32,7 @@ public class @PlayerInput : IInputActionCollection, IDisposable
                     ""id"": ""aa48b163-30cd-4971-af5f-92abeedbec29"",
                     ""expectedControlType"": """",
                     ""processors"": """",
-                    ""interactions"": """"
+                    ""interactions"": ""Hold(duration=0.001,pressPoint=0.001)""
                 }
             ],
             ""bindings"": [
